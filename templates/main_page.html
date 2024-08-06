@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            div.row{
+                max-width: 100%;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>A simple ML demo</title>
+    </head>
+
+    <body>
+        Patients:
+        {% for patient in patients %}
+            <div class="row">
+                Name: <a href="/my-link/{{ patient.id }}">{{ patient.display_name }}</a> <br>
+            </div>
+        {% endfor %}
+
+        <div class="row">
+            Current patient: {{ current_patient.display_name }} <br>
+            User-entered blood pressure: {{ userbp }} <br>
+            Prediction: {{ prediction }}
+        </div>
+
+        <div class="row">
+            <form action="." method="POST">
+                If desired, enter a new blood pressure value here: <input type="number" id="userbp" name="userbp" min="1" max="400">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
