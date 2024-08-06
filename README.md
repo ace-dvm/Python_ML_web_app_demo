@@ -53,9 +53,9 @@ Thus the flow is:
 Although calling Python from a shell called from Python is a little obtuse, in a way, it's a good illustration. This same method could be used to get a result from *any* program that can write to a file. Thus it could also be used to get a result from an R model, for example.
 
 The example that's running on pythonanywhere is using these files:
-* [flask_app.py](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/flask_app.py)
-* [my_shell_model.py](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/my_shell_model.py)
-* [templates/main_page.html](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/templates/main_page.html)
-* and the two model files from step 5.
+* /home/drace/mysite/[flask_app.py](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/flask_app.py)
+* /home/drace/mysite/[templates/main_page.html](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/templates/main_page.html)
+* /home/drace/[my_shell_model.py](https://github.com/ace-dvm/Python_ML_web_app_demo/blob/main/my_shell_model.py)
+* and the two model files from step 5, in the /home/drace/mysite/ directory
 
 Note: There are some extra "print" statements to help with debugging. These are visible in the log files. Also: Yes, I know this page is ugly. The objective is to show how the back end works, not to make a nice front end.
